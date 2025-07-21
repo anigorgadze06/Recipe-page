@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: hsl(30, 54%, 90%);
+    padding: 20px;
+    overflow-x: hidden;
+}
+.maincont{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    width: 600px;
+    margin: 0 auto;
+    gap: 10px;
+    border-radius: 20px;
+    padding: 40px;
+}
+.title{
+    color: hsl(24, 5%, 18%);
+    font-family: youngserif;
+    font-size: 30px;
+    margin-top: 5px;
+}
+p{
+    color: hsl(30, 10%, 34%);
+    font-family: outfit;
+    font-size: 15px;
+}
+.pic{
+    align-self: center;
+    width: 600px;
+    border-radius: 20px;
+}
+.seccont{
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 20px;
+    width: 575px;
+    align-self: center;
+    font-family: outfit;
+    margin-top: 20px;
+    padding: 15px;
+}
+.prep{
+    color: hsl(332, 51%, 32%);
+}
+.list1{
+    color: hsl(30, 10%, 34%);
+    margin-top: 10px;
+}
+hr{
+    border: 1px solid;
+    border-color: hsl(30, 10%, 34%);
+    width: 600px;
+    margin-top: 20px;
+    opacity: 0.2;
+}
+.titlesub{
+    color: hsl(14, 45%, 36%);
+    font-family: youngserif;
+    font-size: 26px;
+    margin-top: 10px;
+}
+.list2{
+    font-family: outfit;
+    color: hsl(30, 10%, 34%);
+}
+li{
+    margin-top: 12px;
+    padding-left: 8px;
+}
+ol{
+    font-family: outfit;
+    color: hsl(30, 10%, 34%);
+}
+ol li::marker{
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+.list1 li::marker{
+    color: hsl(332, 51%, 32%);
+}
+.list2 li::marker{
+    color: hsl(14, 45%, 36%);
+}
+table{
+    font-family: outfit;
+    color: hsl(30, 10%, 34%);
+    border-collapse: collapse;
+    width: 100%;
+}
+td{
+    border-bottom: 1px solid rgba(83, 81, 81, 0.5);
+    margin-right: 30px;
+    padding: 17px;
+}
+.nums{
+    color: hsl(14, 45%, 36%);
+}
+.last{
+    border-bottom: 0;
+}
+.numslast{
+    color: hsl(14, 45%, 36%);
+    border-bottom: 0;
+}
+@font-face {
+    font-family: youngserif;
+    src: url(fonts/YoungSerif-Regular.ttf);
+}
+@font-face {
+    font-family: outfit;
+    src: url(fonts/Outfit-VariableFont_wght.ttf);
+}
+@media(max-width:700px){
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        padding: 0;
+        background-color: hsl(0, 0%, 100%);
+    }
+    .maincont{
+        width: 100%;
+        border-radius: 0;
+        padding: 8px;
+    }
+    .pic{
+        width: 100%;
+        border-radius: 0;
+    }
+    .seccont{
+        width: 100%;
+        padding: 6px;
+    }
+    hr{
+        width: 100%;
+    }
+    p{
+        font-size: 12px;
+    }
+    li{
+        font-size: 12px;
+    }
+    table{
+        font-size: 12px;
+    }
+    .titlesub{
+        font-size: 16px;
+    }
+    .title{
+        font-size: 20px;
+    }
+}
